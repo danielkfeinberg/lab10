@@ -155,7 +155,8 @@ We've been using flat files (CSVs -- but there a functions to read in all kinds 
 **Source:** Jornada Basin LTER Spatial Data: Dominant Vegetation of the JER and CDRRC in 1998 (Download KMZ 3972 KB) Dominant and subdominant vegetation on the Jornada Experimental Range and Chihuahuan Desert Rangeland Research Center in 1998. Published in Gibbens, R. P., McNeely, R. P., Havstad, K. M., Beck, R. F., & Nolen, B. (2005). Vegetation changes in the Jornada Basin from 1858 to 1998. Journal of Arid Environments, 61(4), 651-668.
 
 ```{r}
-jornada_veg <- read_sf("doc.kml") %>% dplyr::select(Name) %>% 
+jornada_veg <- read_sf("doc.kml") %>% 
+  dplyr::select(Name) %>% 
   clean_names()
 
 ggplot() +
