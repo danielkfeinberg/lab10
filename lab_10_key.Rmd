@@ -88,6 +88,16 @@ Try some different fun combinations.
 
 So far, we've created version-controlled projects using the "repo first, then clone to make an R Project" workflow. Now, let's learn how we can start from a non-version controlled R Project (i.e. an "R Project first workflow"). 
 
+first in the console type:
+
+usethis::use_git()
+
+then type 
+
+usethis::use_github()
+
+then make sure to follow the steps below
+
 ### Reminder: changing from `master` to `main`
 
 - Go to your GitHub repo
