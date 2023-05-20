@@ -104,7 +104,15 @@ then make sure to follow the steps below
 - Click on branches
 - Click editing pencil to right of `master`
 - Rename
-- Copy the git commands to your clipboard
+- Copy the git commands to your clipboard (below)
+
+```{bash}
+# git branch -m master main
+# git fetch origin
+# git branch -u origin/main main
+# git remote set-head origin -a
+```
+
 - Go back to RStudio
 - Paste those into the TERMINAL, press Enter to run
 - Now the default in both places is `main`
